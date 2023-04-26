@@ -1,0 +1,427 @@
+html,body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/gabb.png);
+    background-position:bottom;
+    background-size:contain; 
+    font-family: 'Source Sans Pro',sans-serif;
+    color:darkcyan;
+   
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+*{
+    text-decoration: none !important;
+    
+}
+h1 {
+  text-shadow: 1px 1px #ffffff;
+}
+
+.nav{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color:#355C7D;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.nav .links a{
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    color: bisque;
+}
+
+.nav .links .mainlink{
+    color:coral;
+}
+
+
+p{
+    color:darkgray
+}
+
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw 0 10vw;
+    height: 100vh;
+}
+
+.landingText h1{
+    font-size: 6vw;
+    margin: 0 !important;
+    padding-right: 100px;
+}
+
+
+.landingText .btn a{
+    font-size: 1.2vw;
+    color: white;
+}
+
+.landingImage img{
+    width: 40vw;
+    border-radius: 10%
+}
+
+
+.about{
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color:azure;
+    
+}
+
+
+
+.aboutText h1{
+    position: relative;
+    left: 110px;
+}
+
+
+
+ol{
+    list-style: none;
+    color: #e0501b;
+}
+
+ol li{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 0px solid #ebebeb;
+}
+
+li p{
+    font-size: 16px;
+    color: #000;
+    padding-left: 60px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+
+li span{
+    position: absolute;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+main{
+		}
+		.text h1{
+			font-size: 50px;
+		
+		}
+		main header{
+			width: 98%;
+			height: 60px;
+			margin: 0 auto;
+			
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			justify-content: space-between;
+			border-bottom: 2px solid #ddd;
+		}
+		header p span{
+			font-size: 40px;
+		    margin: 0 5px;
+		    cursor: pointer;
+            background:red;
+		    color:azure;
+		     width: 30px;
+		    height: 30px;
+		    display: inline-block;
+		    line-height: 19px;
+		    text-align: center;
+		    border-radius: 3px;
+		}
+		section{
+			width: 98%;
+			height: 600px;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			overflow-x: auto;
+		}
+		section::-webkit-scrollbar{
+			display: none;
+		}
+		section .product{
+			min-width: 24%;
+			height: 80%;
+			background: whitesmoke;
+			margin:  0 20px  0 0;
+			border-radius: 20px;
+			position: relative;
+			left: 0;
+			transition: 0.5s;
+
+		}
+		picture{
+			width: 90%;
+			height: 50%;
+			padding: 20px;
+			display: flex;
+			overflow: hidden;
+			margin-bottom: 20px;
+		}
+		picture img{
+			width: 100%;
+		}
+		.detail,
+		.button{
+			width: 90%;
+			margin: auto;
+			padding: 5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 50px;
+			font-size: 20px;
+			color: #444;
+		}
+		small{color: #555;}
+		.button a{
+			text-decoration: none;
+			padding: 6px 14px;
+		    font-size: 15px;
+		    margin: 5px 0 0 20px;
+		    display: inline-btnblock;
+		    background: red;
+		    color: white;
+		}
+		p.star{
+			margin: 5px auto;
+		    width: 65%;
+		    font-size: 25px;
+		    color: #808080;
+		}
+		@media (max-width: 768px) {
+			.text h1{
+				font-size: 35px;
+			}
+			.text p{
+				width: 90%;
+			}
+			header h1{
+				font-size: 25px;
+			}
+			header p span{
+				font-size: 30px;
+			}
+			section .product {
+				min-width: 49%;
+				margin:  0 10px  0 0;
+			}
+			.detail, .button{
+				font-size: 16px;
+			}
+			a{
+				padding: 6px 10px;
+			}
+		}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+    width: 100px;
+    margin-top: 30px;
+    padding: 14px 20px 14px 20px;
+    background-color:red;
+    border-radius: 45px;
+    text-align: center;
+    color: white;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; 
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
